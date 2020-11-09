@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register student</title>
+    <style>
+        body {font-family: arial;}
+        tr, th, td {
+            border: none;
+
+    </style>
+</head>
+<body>
+<form action="Register.html" method="post">
+    <table width="500" align="center" border=20 bordercolor="#CCCC66" bgcolor="#CCCC66" >
+        <tr bgcolor="#CCFFCC">
+            <th align="center" colspan="2">
+                <H4><span style="color: blue; ">Register student</span></H4>
+        </tr>
+        <tr>
+            <td>
+                <span style="color: #000099">Name</span>
+            </td>
+            <td>
+                <input type="name" name="Name"size="25"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="color: #000099">Date of birth</span>
+            </td>
+            <td>
+                <input type="date" name="bday"size="15"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="color: #000099">Sex</span>
+            </td>
+            <td>
+                <input type="radio" name="sex" value="Male"/>Male
+                <input type="radio" name="sex" value="Famale"/>Famale
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="add"><span style="color: #000099">Addrees</span></label>
+            </td>
+            <td>
+                    <textarea id="add" name="add" rows="4" cols="35">
+                    </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><span style="color: #000099">Class</span></td>
+            <td><select name="class" id="">
+                <option name="class" value="CC">choose class</option>
+                <option name="class" value="C1020G2">C1020G2</option>
+                <option name="class" value="C1020G1">C1020G1</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><span style="color: #000099">Email</span></td>
+            <td><input type="Email" name="email"/></td>
+        </tr>
+        <tr>
+            <td><span style="color: #000099">Phone</span></td>
+            <td><input type="phone" name="phone"/></td>
+
+        </tr>
+        <tr>
+            <td>&emsp;</td>
+            <td>
+                <input type="submit"name="sm" value="submit"/>
+                <input type="reset" name="rs" value="reset"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
