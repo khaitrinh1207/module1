@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quy đổi tiền tệ</title>
+</head>
+<body>
+<form action=""></form>
+    <table align="center" width="700" style="text-align: center">
+
+        <tr>
+            <th>Amount</th>
+            <th>From Curency</th>
+            <th>To Currency</th>
+            <td rowspan="2">
+                <input type="button" name="convert" value="convert" onclick="convert()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="number" id="input" value="">
+                </td>
+                <td>
+                <select name="from" id="from">
+                    <option name="vnd" value="23000">VietNam</option>
+                    <option name="usd" value="1">USD</option>
+                    <option name="ndt" value="6.6">Tệ</option>
+                </select>
+            </td>
+            <td>
+                <select name="to" id="to">
+                    <option name="usd" value="1">USD</option>
+                    <option name="vnd" value="23000">VietNam</option>
+                    <option name="ndt" value="6.6">Tệ</option>
+                </select>
+            </td>
+        </tr>
+
+
+    </table>
+</form>
+    <h1 id="Result" style="text-align: center"></h1>
+
+</body>
+</html>
+<script>
+    function convert() {
+        var input = document.getElementById("input").value;
+        var from = document.getElementById("from").value;
+        var to = document.getElementById("to").value;
+        var output = input*to/from;
+        document.getElementById('Result').innerText='Result :'+ output;
+    }
+</script>
