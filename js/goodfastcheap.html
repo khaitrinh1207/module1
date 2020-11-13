@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" id="good" onchange="play('good')">Good<br>
+<input type="checkbox" id="fast" onchange="play('fast')">fast<br>
+<input type="checkbox" id="cheap" onchange="play('cheap')">Cheap<br>
+<script>
+    function play(id) {
+        let good = document.getElementById('good');
+        let fast = document.getElementById('fast');
+        let cheap = document.getElementById('cheap');
+
+
+        if (id == 'good') {
+            if (good.checked == true ){
+                if (fast.checked == true) {
+                    cheap.checked = false;
+                }
+            }
+
+        } else if ( id == 'fast') {
+            if (fast.checked ==true){
+                if (cheap.checked ==true) {
+                    good.checked = false;
+                }
+            }
+        } else {
+            if (cheap.checked == true){
+                if  (good.checked == true) {
+                    fast.checked = false;
+                }
+            }
+        }
+
+        document.getElementById('cheap').checked = cheap.checked;
+        document.getElementById('good').checked = good.checked;
+        document.getElementById('fast').checked = fast.checked;
+    }
+</script>
+</body>
+</html>
