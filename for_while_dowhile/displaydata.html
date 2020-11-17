@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chương trình hiển thị bảng dữ liệu</title>
+</head>
+<body>
+<script>
+    let board = "<table border='1' width='300px' cellspacing='0' cellpadding='0'>";
+        for ( i =1; i <= 10 ; i++){
+            board = board + '<tr>'
+        for (j =1; j<=10; j++){
+            board = board + '<td>' + j*i + '</td>';
+            }
+            board += '</tr>';
+        }
+        board = board + "</table>";
+    document.write(board);
+</script>
+</body>
+</html>
