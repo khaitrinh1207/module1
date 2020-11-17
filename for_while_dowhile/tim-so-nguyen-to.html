@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let count = 0;
+    let n = 2;
+    while (count < 20){
+        let i;
+        let ktnt =true;
+        for (i = 2; i< n; i++ )
+            if (n % i == 0)
+                ktnt = false;
+            if (ktnt) {
+            count++;
+            document.write(count+"->"+n+'<br>');
+        }
+        n++;
+    }
+</script>
 </body>
 </html>
