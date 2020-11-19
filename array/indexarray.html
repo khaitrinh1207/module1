@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // khởi tạo mảng 2 chiều
+    let myArray = new Array(10)
+    for (let i=0; i< 10; i++)
+        myArray[i]= new Array(10);
+    for (let i=0; i< 10; i++)
+        for (let j=0;j< 10; j++)
+            myArray[i][j]=Math.round(Math.random()*1000);
+    // hiện mảng 2 chiều
+    for (let i=0;i<10; i++) {
+        let sum =0;
+        for (let j=0;j< 10; j++) {
+            document.write(myArray[i][j]+'  :  ');
+            sum += myArray[i][j];
+        }
+        document.write(': <b>'+ sum + "</b><br/>");
+
+    }
+    // tính tổng cột
+     for (let i=0; i<10; i++)
+     {
+         let sum =0;
+         for (let j=0;j<10;j++)
+             sum += myArray[j][i];
+
+         document.write("<b>"+ sum + "</b>:")
+     }
+
+</script>
+</body>
+</html>
