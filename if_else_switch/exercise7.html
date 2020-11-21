@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số phút gọi :'));
+    let total;
+    if ( a <= 50 ) {
+        total = a*600+25000;
+    } else if ( a<= 150 || a > 50) {
+        total = (a-50)*400+(50*600)+25000;
+    } else {
+        total = (a-200)*200+(50*600)+(150*400)+25000;
+    }
+    alert("Cước điện thoại tạm tính là :"+total);
+</script>
+</body>
+</html>
