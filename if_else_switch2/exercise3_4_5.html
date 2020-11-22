@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình vuông khi biết cạnh a.</title>
+</head>
+<body>
+<form action="">
+<select name="" id="shape">
+    <option value="1">hình vuông</option>
+    <option value="2">hình chữ nhật</option>
+    <option value="3">tam giác vuông</option>
+</select>
+    <input type="number" name="canh1" id="edge1">
+    <input type="number" name="canh2" id="edge2">
+    <input type="button" onclick="areaOf()" value="Covert">
+</form>
+<h2 id="result"></h2>
+<script>
+    function areaOf() {
+        let a = parseInt(document.getElementById("shape").value);
+        let b = parseInt(document.getElementById("edge1").value);
+        let c = parseInt(document.getElementById("edge2").value);
+        if ( a == 3) {
+            document.getElementById('result').innerHTML ='Result : ' +b/2 * c;
+        } else {
+            document.getElementById('result').innerHTML ='Result : ' +b * c;
+        }
+    }
+
+</script>
+</body>
+</html>
