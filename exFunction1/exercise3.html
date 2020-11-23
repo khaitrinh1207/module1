@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+    </title>
+</head>
+<body>
+<script>
+    function inputNumbers(a, b) {
+        if ( a > b) {
+        alert(a+" lớn hơn "+b);
+
+        } else {
+           let total = a+b;
+            alert(total);
+        }
+    }
+    var a = parseFloat(prompt("Nhập vào số thứ nhất :"));
+    var b = parseFloat(prompt("Nhập vào số thứ hai :"));
+    inputNumbers(a, b);
+</script>
+</body>
+</html>

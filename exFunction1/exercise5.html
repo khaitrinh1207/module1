@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5: Tạo một mảng với bảy phần tử dạng chuỗi có giá trị là tên các ngôi sao</title>
+</head>
+<body>
+<script>
+    function constellations() {
+        let int = prompt('Nhập tên ngôi sao :') ;
+        let nameStar = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let index = -1;
+            for (let i = 0; i < nameStar.length; i++) {
+                if (nameStar[i] == int) {
+                    index = i;
+                }
+            }
+                if ( index == -1 ){
+                    alert("không tìm thấy !")
+                }
+                else{
+                    alert(constellation[index]);
+                }
+        }
+        constellations();
+</script>
+</body>
+</html>
