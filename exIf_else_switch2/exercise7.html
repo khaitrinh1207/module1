@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    // ax^2 + bx + c = 0 (a != 0)
+    let a = parseInt(prompt("Nhập số a :"));
+    let b = parseInt(prompt("nhập số b :"));
+    let c = parseInt(prompt("nhập cố c :"));
+    let delta = b*b-(4*a*c);
+    let x1, x2;
+    if ( delta < 0 )
+        alert('Phương trình vô nghiệm !');
+    else if ( delta == 0 ) {
+        x1 = x2 = -b/2*a
+        alert('Phương trình có nghiệm kép = '+x1)
+    }
+    else if (delta > 0 ) {
+        x1 = (-b+Math.sqrt(delta))/(2*a);
+        x2 = (-b-Math.sqrt(delta))/(2*a);
+        alert('Phương trình có 2 nghiệm phân biệt là : x1 = '+x1+' và x2 = '+x2);
+    }
+    /*else if ( a+b+c == 0 ) {
+        x1 = 1;
+        x2 = c/a;
+        alert('Phương trình có 2 nghiệm phân biệt là : x1 = '+x1+' và x2 = '+x2);
+    }
+    else if (a-b+c == 0) {
+        x1 = -1;
+        x2 = -c/a;
+        alert('Phương trình có 2 nghiệm là : x1 = '+x1+' và x2 = '+x2);
+    }*/
+</script>
+</body>
+</html>

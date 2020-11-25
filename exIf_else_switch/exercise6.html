@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập doanh thu bán hàng :"));
+    let bonus;
+    if ( a > 10000000) {
+        bonus = a/100 * 10;
+        alert('Bonus nhận được là : '+bonus);
+        alert('Tổng nhận : '+(bonus+a));
+    } else if (a > 7000000) {
+        bonus = a/100 * 5;
+        alert('Bonus nhận được là : '+bonus);
+        alert('Tổng nhận : '+(bonus+a));
+    } else if (a > 4500000) {
+        bonus = a/100 * 3;
+        alert('Bonus nhận được là : '+bonus);
+        alert('Tổng nhận : '+(bonus+a));
+    } else {
+        alert("Bạn không nhận được bonus !");
+    }
+</script>
+</body>
+</html>

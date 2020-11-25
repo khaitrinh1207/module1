@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>điều chỉnh nhiệt độ phòng</title>
+</head>
+<body>
+<script>
+        let a;
+        do {
+            a = parseInt(prompt('Nhập nhiệt độ phòng hiện tại:'));
+            if (20 <= a  && a <= 100){
+                alert('nhiệt độ ở mức phù hợp!')
+            } else {
+                alert('bạn cần chỉnh lại nhiệt độ!')
+            }
+        } while ( a < 20 || a > 100);
+
+</script>
+</body>
+</html>

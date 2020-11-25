@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tiền lãi ngân hàng</title>
+</head>
+<body>
+
+<form action="">
+<input type="number" name="amount" id="money">
+<select name="months" id="mon">
+    <option value="6">6 Months</option>
+    <option value="12">12 Months</option>
+    <option value="24">24 Months</option>
+</select>
+<input type="button" name="convert" value="convert" onclick="interrestRate()">
+</form>
+<h2 id="result"></h2>
+<h2 id="difference"></h2>
+<script>
+    function interrestRate() {
+        let a = document.getElementById('money').value;
+        let b = document.getElementById('mon').value;
+        let c = 0;
+        if ( b == 6)
+            c = a*(1+0.09/12)**(1/2*12);
+        else if ( b == 12) {
+            c = a*(1+0.09/12)**(1*12);
+        } else
+            c = a*(1+0.09/12)**(2*12);
+        document.getElementById('result').innerText ="Tổng tiền :" + c;
+        document.getElementById('difference').innerText="Chênh lệch :"+(c-a);
+    }
+
+    /* Công thức tính lãi kép
+    Fn=P(1+i/m)^(n.m)
+     trong đó :
+     P: số tiền vốn ban đầu
+     i: lãi suất hàng năm( ví dụ 10% thì i = 0.1)
+     n: số năm
+     m: số lần gép lãi trong năm
+     Fn: số tiền nhận được sau n năm
+    */
+</script>
+</body>
+</html>

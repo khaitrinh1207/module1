@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chương trình tính giá điện</title>
+</head>
+<body>
+<script>
+    let numkw = parseInt(prompt('Nhập số điện :'));
+    let total = 0;
+    if (numkw <= 100)
+        total = numkw*1000;
+    else if (numkw <= 150)
+        total = (numkw-100)*2000+100000;
+    else if (numkw <= 200)
+        total = (numkw-150)*2500+198000;
+    else
+        total = (numkw-200)*3000+323000;
+    alert('Giá điện = '+total);
+</script>
+</body>
+</html>

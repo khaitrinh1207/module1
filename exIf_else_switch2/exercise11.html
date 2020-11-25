@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập tiền lương tháng này của bạn'));
+    let b = 0;
+    if ( a > 9000000) {
+         b = (a-9000000)/100*10;
+         alert('Thuế thu nhập cá nhân tháng này : '+b);
+    }
+    alert('Lương tháng này :'+(a-b));
+</script>
+</body>
+</html>

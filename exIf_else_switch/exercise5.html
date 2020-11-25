@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập điểm bài kiểm tra:"));
+    let b = parseFloat(prompt("Nhập điểm thi giữa kỳ:"));
+    let c = parseFloat(prompt("Nhập điểm thi cuối kỳ:"));
+    let medium = (a+b+c)/3;
+    if (medium >= 8.5) {
+        alert("Xếp học lực loại GIỎI : "+medium);
+    }
+     else if (medium >= 7.0) {
+        alert("Xếp học lực loại KHÁ : "+medium);
+    }
+    else if (medium >= 5.0) {
+        alert("Xếp học lực loại TRUNG BÌNH : "+medium);
+    }
+    else if (medium >= 3.0) {
+        alert("Xếp học lực loại YẾU : "+medium);
+    }
+    else {
+        alert("Xếp học lực loại KÉM : "+medium);
+    }
+
+</script>
+</body>
+</html>
