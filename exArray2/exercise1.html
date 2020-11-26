@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>khởi tạo mảng 2 chiều,in ra các phần tử trong mảng</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [
+        [1, 2, 3, 4],
+        [8, 9, 10],
+        [7, 6, 5, 4],
+        [7, 10, 13, 16],
+        [3, 10, 26, 7]
+    ];
+    console.log(a);
+    for (let i= 0; i < a.length;i++){
+        document.write('mảng 1'+'<br/>');
+        for (let j=0; j < a[i].length;j++){
+            document.write(a[i][j]+'<br/>');
+        }
+    }
+</script>
 </body>
 </html>

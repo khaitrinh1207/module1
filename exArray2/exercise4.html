@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>đếm số từ trong một chuỗi</title>
 </head>
 <body>
-$END$
+<script>
+
+    function countString(name) {
+        name = ' Trịnh Công Khải đẹp trai';
+        document.write(name+"<br/>");
+        let count=1;
+        for (let i = 0; i < name.length; i++) {
+        if (name[i] != ' ' && name[i + 1] == ' ') {
+            count++;
+            }
+        }
+        document.write("Số từ trong câu là : "+count);
+    }
+
+    countString();
+</script>
 </body>
 </html>
