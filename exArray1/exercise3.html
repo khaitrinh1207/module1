@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</title>
 </head>
 <body>
-$END$
+<script>
+    let myArray = [2,4,9,6,];
+    console.log(myArray);
+    let max;
+    let sum=0;
+    let avg;
+    max = myArray[0]
+    for ( let i =0; i < myArray.length; i++){
+        if ( myArray[i] > max) {
+            max = myArray[i];
+        }
+        sum += myArray[i];
+        avg = sum/i;
+    }
+    document.write("Phần tử lớn nhất là : "+max+"<br/>");
+    document.write("Giá trị trung bình : "+avg);
+</script>
 </body>
 </html>

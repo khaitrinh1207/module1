@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
 </head>
 <body>
-$END$
+<script>
+    let num = [2,4,5,6,8,10,11,13,15,17];
+    let sum =0;
+    let count =0;
+    console.log(num);
+    for ( let i =0; i < num.length; i++){
+        if (num[i] > 10 ) {
+            count++
+            sum += num[i];
+
+        }
+
+    }
+    document.write("Số phần tử lớn hơn 10 : "+count+'<br/>');
+    document.write("Tổng : "+sum);
+</script>
 </body>
 </html>

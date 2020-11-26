@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</title>
 </head>
 <body>
-$END$
+<script>
+    let myArray = [2,4,5,6,8,31,11,13,15,17];
+    console.log(myArray);
+    let max;
+    let index=0;
+    max = myArray[0];
+    for (let i=0; i <= myArray.length; i++){
+        if (myArray[i] > max){
+            max = myArray[i];
+            index = i;
+        }
+    }
+    document.write("Phần tử lớn nhất là : "+max+'<br/>');
+    document.write("vị trí phần tử trong mảng : "+index);
+</script>
 </body>
 </html>

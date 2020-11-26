@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó</title>
 </head>
 <body>
-$END$
+<script>
+    let myArray = [];
+    let a;
+    let i=0;
+    while ( i <= 4){
+        a = parseInt(prompt("nhập phần tử vào mảng :"));
+        myArray.push(a);
+        i++
+    }
+    document.write("mảng nhập vào ban đầu : "+myArray+"<br/>");
+    myArray.reverse();
+    document.write("mảng đảo ngược : "+myArray);
+</script>
 </body>
 </html>
