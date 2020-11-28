@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng lớp</title>
 </head>
 <body>
-$END$
+<script>
+    class myDate {
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        // lấy giá trị trong class
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+        getYear() {
+            return this.year;
+        }
+
+        // đổi giá trị trong class
+
+        setDay(d) {
+            this.day = d;
+        }
+        setMonth(m) {
+            this.month = m;
+        }
+        setYear(y) {
+            this.year = y;
+        }
+
+    }
+    let date = new myDate(1, 2, 2020);
+    let day = date.setDay(5);
+        day = date.getDay();
+        console.log(day)
+</script>
 </body>
 </html>
