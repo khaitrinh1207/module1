@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>rectangle</title>
 </head>
 <body>
+<canvas id="myCanvas" style="border: 2px solid black" width="500" height="500"></canvas>
+<script>
+    let Rectangle = function (x, y, length, width){
+        this.x = x;
+        this.y = y;
+        this.length = length;
+        this.width = width;
+        this.getX= function(){
+             return this.x
+        }
+        this.getY = function(){
+            return this.y
+        }
+        this.getLength = function(){
+            return this.length
+        }
+        this.getWidth = function(){
+            return this.width
+        }
+        // this.setX = function(value){
+        //     this.x=value;
+        // }
+        // this.setY=function(value){
+        //     this.y=value
+        // }
+        // this.setLength = function(value){
+        //     this.length=value;
+        // }
+        // this.setWidth=function(value){
+        //     this.width=value;
+        // }
 
+    }
+    let rectangle = new Rectangle(20, 20, 100, 50);
+    function createRectangle() {
+        let ctx = document.getElementById('myCanvas').getContext("2d");
+
+        ctx.beginPath();
+        ctx.rect(rectangle.x, rectangle.y, rectangle.length, rectangle.width);
+        ctx.strokeStyle = "red"
+        ctx.stroke();;
+        ctx.closePath();
+    }
+    createRectangle();
+
+
+</script>
 </body>
 </html>
